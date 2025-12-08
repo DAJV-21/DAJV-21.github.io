@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+  Updates for JPN Fall 2024
+  FALL2024ID5718
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Visualization for the public">
+  <meta property="og:description" content="This shows two interactive plots about professional licenses data in the US.">
+  <meta property="og:image" content="assets/pngs/Map_DC.png">
+
+  <title>Visualization for the public</title>
+  <meta name="description" content="This shows two interactive plots about professional licenses data in the US.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>IS445 Data Viz</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="crime-in-washington-dc">Crime in Washington, D.C.</h1>
+
+<h3 id="created-by-daniel-jimenez-sankirtana-ravichandran-jenna-chen">Created by: Daniel Jimenez, Sankirtana Ravichandran, Jenna Chen</h3>
+
+<vegachart schema-url="/assets/json/CentralViz.json" style="width: 100%"></vegachart>
+
+<p>Above is a visualization showing all crimes committed in Washington, D.C. in 2025. The graph divides all crimes into nine categories based on the type of offense. Some examples of these offenses include theft, arson, and assault. Based on the colors in the bar graph, you can see what time of day each of these crimes was committed at. If you are curious to learn more about the relationship between the type of crime and the time of day it was committed, you can click on the color that corresponds to the time of day you are interested in. The graph will change only to show you the crimes committed during that time of day. You can see the different times of day in the legend on the right-hand side. If you want to view all crimes, regardless of the time of day they were committed, at once, click the white space between the columns.</p>
+
+<p><img src="/assets/pngs/Over-18-new.png" width="500" height="600" /></p>
+
+<p>In the contextual visualization section, you will see a map of D.C. homicides for 2021. This image was created by the D.C. Policy Center shown in the next <a href="https://www.dcpolicycenter.org/publications/homicide-exposure-maps/">link</a>. You can use this image to better understand which regions of Washington, D.C. are most prone to criminal activity, in this case, specifically homicides. This visualization serves as a baseline for crime information that you can use in many ways. If you are planning to move to Washington, D.C., this image may help you think about which neighborhoods you want to live in or avoid. If you are interested in learning about policing patterns, this visualization may serve as a starting point and can be used alongside other datasets to help identify them. While this visualization provides powerful information about crime in D.C., it is essential to recognize that it includes only homicides from 2021 and may be limited in its ability to capture broader crime patterns.</p>
+
+<vegachart schema-url="/assets/json/ContextualViz1.json" style="width: 100%"></vegachart>
+
+<p>The second contextual visualization highlights the specific neighborhood groupings (or clusters) in Washington D.C. By hovering over the map, a pop-up will list which neighborhoods are located in that particular neighborhood cluster. For example, Howard University is in Cluster 3, Georgetown is in Cluster 4, George Washington University is in Cluster 5, Downtown and Chinatown are in Cluster 8, American University Park is in Cluster 11, Union Station is in Cluster 25, and Capitol Hill is in Cluster 26. The bar graph to the right of the map displays the area in square miles of each neighborhood cluster. You can select a specific neighborhood cluster from the dropdown menu underneath the map. Selecting a specific cluster from the dropdown will highlight that cluster on the map and on the bar graph.</p>
+
+<!-- these are written in a combo of html and liquid -->
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://catalog.data.gov/dataset/crime-incidents-in-2025">
+  The Data
+</a>
+</div>
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/DAJV-21/DAJV-21.github.io/blob/main/python_notebooks/Homework5.ipynb">
+  The Analysis
+</a>
+</div>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Daniel Jimenez</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:daj5@illinois.edu"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/DAJV-21"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a>
+
+</div>
+
+  Theme by <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a> and <a href="https://github.com/4dcu-be/4dcu.be">4dcu.be</a>.
+
+  
+<!--<small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+-->
+
+</footer>
+
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
+
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Vega stack: versions compatible with Altair v5.x that outputs VL 5.20.x specs -->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+<!--
+end of checks! JPN
+-->
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

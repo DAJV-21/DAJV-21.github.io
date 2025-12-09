@@ -15,9 +15,12 @@ custom_js:
 
 ### Created by: Daniel Jimenez, Sankirtana Ravichandran, Jenna Chen
 
+
 ##### Note: For visualizing all the grqaphs caracteristics correctly, click the sun button located the top right part, next to the about button. 
 
+
 <vegachart schema-url="{{ site.baseurl }}/assets/json/CentralViz.json" style="width: 100%"></vegachart>
+
 
 Above is a visualization showing all crimes committed in Washington, D.C. in 2025. The graph divides all crimes into nine categories based on the type of offense. Some examples of these offenses include theft, arson, and assault. Based on the colors in the bar graph, you can see what time of day each of these crimes was committed at. If you are curious to learn more about the relationship between the type of crime and the time of day it was committed, you can click on the color that corresponds to the time of day you are interested in. The graph will change only to show you the crimes committed during that time of day. You can see the different times of day in the legend on the right-hand side. If you want to view all crimes, regardless of the time of day they were committed, at once, click the white space between the columns. 
 

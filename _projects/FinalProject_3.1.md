@@ -16,7 +16,7 @@ custom_js:
 ### Created by: Daniel Jimenez, Sankirtana Ravichandran, Jenna Chen
 
 
-##### Note: For visualizing all the graphs characteristics correctly, click the sun button located the top right part, next to the about button. 
+##### Note: For visualizing all the graphs' characteristics correctly, click the sun button located the top right part, next to the about button. 
 
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/CentralViz.json" style="width: 100%"></vegachart>
